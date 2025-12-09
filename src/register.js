@@ -26,7 +26,7 @@ function Register() {
 
         // axios.post("http://localhost:3000/login", formdata);
 
-        await fetch("/admin/login", {
+        await fetch("authbackend-production-b892.up.railway.app/admin/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -76,3 +76,4 @@ function Register() {
 }
 
 export default Register
+

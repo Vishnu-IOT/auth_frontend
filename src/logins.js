@@ -15,7 +15,7 @@ function Login() {
   const success = async (e) => {
     e.preventDefault();
 
-    await fetch("/admin/log", {
+    await fetch("authbackend-production-b892.up.railway.app/admin/log", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -78,3 +78,4 @@ function Login() {
 }
 
 export default Login
+

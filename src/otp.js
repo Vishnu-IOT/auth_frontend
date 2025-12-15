@@ -13,7 +13,7 @@ function Otp() {
         // formdata.append(otp);
         console.log(otp, "good");
         const get = localStorage.getItem("token")
-        await axios.post("/admin/verifyotp", { "otp": otp }, {
+        await axios.post("https://authbackend-production-b892.up.railway.app/admin/verifyotp", { "otp": otp }, {
             headers: {
                 Authorization: get,
                 'Content-Type': 'application/json'
@@ -38,3 +38,4 @@ function Otp() {
 }
 
 export default Otp
+

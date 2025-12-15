@@ -16,7 +16,7 @@ function Register() {
         // formdata.append("password", event.target.password.value);
         // formdata.append("type", event.target.type.value);
         // formdata.append("media", file);
-        // formdata.append("status", event.target.status.value);
+        // formdata.append("status", event.target.status.value)
 
         // console.log(event.target.name.value);
         // formdata.append("name", event.target.name.value);
@@ -76,5 +76,6 @@ function Register() {
 }
 
 export default Register
+
 
 

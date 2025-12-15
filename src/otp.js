@@ -20,8 +20,8 @@ function Otp() {
             }
         })
             // .then((res) => res.json())
-            .then((data) => {alert(data.data.success); navigate("http://youtube-clone-theta-liart.vercel.app")})
-            .catch((err) => { alert(err.response.data.success) })
+            .then((data) => { console.log(data); alert(data.data.success); navigate("http://youtube-clone-theta-liart.vercel.app")})
+            .catch((err) => { console.log(data); alert(err.response.data.success) })
     }
 
     return (
@@ -38,4 +38,5 @@ function Otp() {
 }
 
 export default Otp
+
 

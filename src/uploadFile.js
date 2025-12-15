@@ -12,7 +12,7 @@ const UploadFile = () => {
         console.log(name,"good");
         const get = localStorage.getItem("token")
 
-        await axios.post("/admin/fileup",formdata,{
+        await axios.post("https://authbackend-production-b892.up.railway.app/admin/fileup",formdata,{
             headers:{"Content-Type": "multipart/form-data",
               Authorization: get
             }
@@ -34,3 +34,4 @@ const UploadFile = () => {
 }
 
 export default UploadFile
+

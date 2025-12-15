@@ -6,7 +6,7 @@ function Email() {
 
     const forgetpass = async (e) => {
         e.preventDefault();
-        await axios.post("authbackend-production-b892.up.railway.app/admin/emailverify", { "email": e.target.email.value })
+        await axios.post("https://authbackend-production-b892.up.railway.app/admin/emailverify", { "email": e.target.email.value })
             .then((data) => {alert(data.data.success);})
             .catch((err)=>alert("Email doesn't Exists. Enter your correct Email"))
 
@@ -27,4 +27,5 @@ function Email() {
 }
 
 export default Email
+
 
